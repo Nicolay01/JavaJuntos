@@ -40,12 +40,9 @@ public class BlackjackEnum {
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        if((handScore >= 12 && handScore <= 16) && dealerScore < 7) {
+        if((handScore >= 12 && handScore <= 16) && dealerScore < 7){
             return "S";
-        } else if((handScore >= 12 && handScore <= 16) && dealerScore > 7){
-            return "H";
-        }
-        if(handScore >= 17) {
+        } else if(handScore >= 17) {
             return "S";
         }
         return "H";
